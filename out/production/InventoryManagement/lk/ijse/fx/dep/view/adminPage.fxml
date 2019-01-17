@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frmAdmin" prefHeight="598.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fx.dep.controller.adminPageController">
+   <children>
+      <Label layoutX="35.0" layoutY="25.0" prefHeight="21.0" prefWidth="70.0" text="ADMIN" textFill="#362020">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="65.0" text="User Name" />
+      <Label layoutX="64.0" layoutY="99.0" text="Password" />
+      <Label layoutX="66.0" layoutY="138.0" text="New Password" />
+      <Label layoutX="57.0" layoutY="174.0" text="Confirm Password" />
+      <TextField fx:id="adminName" layoutX="178.0" layoutY="61.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextField fx:id="adminPsswrd" layoutX="178.0" layoutY="95.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextField fx:id="adminNewPsd" layoutX="178.0" layoutY="134.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextField fx:id="adminConPsd" layoutX="178.0" layoutY="170.0" prefHeight="25.0" prefWidth="311.0" />
+      <Button layoutX="244.0" layoutY="217.0" mnemonicParsing="false" onAction="#adminChange" prefHeight="25.0" prefWidth="70.0" text="Change" />
+      <Button layoutX="455.0" layoutY="23.0" mnemonicParsing="false" onAction="#adminLogout" text="Logout" />
+      <Button layoutX="555.0" layoutY="23.0" mnemonicParsing="false" onAction="#adminHome" prefHeight="25.0" prefWidth="59.0" text="Home" />
+      <Label layoutX="43.0" layoutY="263.0" prefHeight="21.0" prefWidth="50.0" text="USER" textFill="#2f1919">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="79.0" layoutY="292.0" mnemonicParsing="false" onAction="#adminNewUser" text="New User" />
+      <Label layoutX="109.0" layoutY="339.0" text="User Name" />
+      <Label layoutX="109.0" layoutY="373.0" text="Password" />
+      <TextField fx:id="adminAddUserName" layoutX="185.0" layoutY="335.0" prefHeight="25.0" prefWidth="252.0" />
+      <TextField fx:id="adminAddPsd" layoutX="185.0" layoutY="369.0" prefHeight="25.0" prefWidth="252.0" />
+      <Button layoutX="253.0" layoutY="413.0" mnemonicParsing="false" onAction="#adminSaveUser" prefHeight="25.0" prefWidth="70.0" text="Save" />
+      <TableView fx:id="adminTable" layoutX="14.0" layoutY="445.0" prefHeight="133.0" prefWidth="689.0">
+        <columns>
+          <TableColumn prefWidth="226.0" text="User Name" />
+          <TableColumn prefWidth="219.0" text="Password" />
+            <TableColumn prefWidth="243.0" text="Dlete User" />
+        </columns>
+      </TableView>
+      <Button layoutX="334.0" layoutY="413.0" mnemonicParsing="false" onAction="#adminUpdateUser" prefHeight="25.0" prefWidth="70.0" text="Update" />
+   </children>
+</AnchorPane>

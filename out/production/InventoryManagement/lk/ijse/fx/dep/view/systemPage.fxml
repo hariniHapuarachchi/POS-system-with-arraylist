@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frmSystem" prefHeight="588.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fx.dep.controller.systemPageController">
+   <children>
+      <Label layoutX="35.0" layoutY="23.0" prefHeight="31.0" prefWidth="114.0" text="System" textFill="#72474d">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="75.0" prefHeight="17.0" prefWidth="72.0" text="Password" />
+      <Label layoutX="92.0" layoutY="113.0" text="new Password" />
+      <Label layoutX="92.0" layoutY="154.0" text="Confirm Password" />
+      <TextField fx:id="spsswrd" layoutX="203.0" layoutY="71.0" prefHeight="25.0" prefWidth="301.0" />
+      <TextField fx:id="sNewPsswrd" layoutX="203.0" layoutY="109.0" prefHeight="25.0" prefWidth="301.0" />
+      <TextField fx:id="sCnfrmPsswrd" layoutX="203.0" layoutY="150.0" prefHeight="25.0" prefWidth="301.0" />
+      <Button layoutX="269.0" layoutY="203.0" mnemonicParsing="false" onAction="#sChangeSystem" prefHeight="25.0" prefWidth="75.0" text="Change" />
+      <Label layoutX="35.0" layoutY="253.0" prefHeight="28.0" prefWidth="75.0" text="ADMIN" textFill="#391a1a">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="66.0" layoutY="290.0" mnemonicParsing="false" onAction="#sNewAdmin" text="New Admin" />
+      <Label layoutX="126.0" layoutY="333.0" text="User Name" />
+      <Label layoutX="126.0" layoutY="362.0" text="Password" />
+      <TextField fx:id="sAddUser" layoutX="203.0" layoutY="329.0" prefHeight="25.0" prefWidth="291.0" />
+      <TextField fx:id="sAddPsswrd" layoutX="203.0" layoutY="358.0" prefHeight="25.0" prefWidth="291.0" />
+      <Button layoutX="211.0" layoutY="398.0" mnemonicParsing="false" onAction="#sAddAdmin" prefHeight="25.0" prefWidth="79.0" text="Save" />
+      <TableView fx:id="systemAdminTable" layoutX="30.0" layoutY="431.0" prefHeight="140.0" prefWidth="633.0">
+        <columns>
+          <TableColumn prefWidth="210.0" text="User Name" />
+          <TableColumn prefWidth="193.0" text="Password" />
+            <TableColumn prefWidth="229.0" text="Delete" />
+        </columns>
+      </TableView>
+      <Button layoutX="542.0" layoutY="23.0" mnemonicParsing="false" onAction="#systemHome" prefHeight="25.0" prefWidth="59.0" text="Home" />
+      <Button layoutX="452.0" layoutY="23.0" mnemonicParsing="false" onAction="#systemLogout" text="logout" />
+      <Button layoutX="504.0" layoutY="282.0" mnemonicParsing="false" onAction="#sAddUser" prefHeight="25.0" prefWidth="132.0" text="Create New User" />
+      <Button layoutX="314.0" layoutY="398.0" mnemonicParsing="false" onAction="#sUpdaeAdmin" prefHeight="25.0" prefWidth="79.0" text="Update" />
+   </children>
+</AnchorPane>

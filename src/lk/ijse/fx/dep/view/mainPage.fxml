@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageCus" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fx.dep.controller.mainPageController">
+   <children>
+      <Label layoutX="67.0" layoutY="38.0" prefHeight="33.0" prefWidth="424.0" text="Poin Of Sale (POS)">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="mCus" fitHeight="83.0" fitWidth="84.0" layoutX="37.0" layoutY="149.0" onMouseClicked="#clickCus" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Conference_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mInven" fitHeight="83.0" fitWidth="83.0" layoutX="168.0" layoutY="149.0" onMouseClicked="#clickInven" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Shop_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="235.0" text="Mange Customer" />
+      <Label layoutX="168.0" layoutY="235.0" text="Manage Inventory" />
+      <ImageView fx:id="mOrder" fitHeight="83.0" fitWidth="84.0" layoutX="294.0" layoutY="159.0" onMouseClicked="#clickOrder" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Buying_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="305.0" layoutY="235.0" text="Place Order" />
+      <ImageView fx:id="mViewO" fitHeight="71.0" fitWidth="83.0" layoutX="398.0" layoutY="155.0" onMouseClicked="#clickViewOrder" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Bill_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="404.0" layoutY="235.0" text="View Order" />
+      <Label layoutX="509.0" layoutY="234.0" text="Settings" />
+      <ImageView fx:id="mSettings" fitHeight="83.0" fitWidth="84.0" layoutX="489.0" layoutY="149.0" onMouseClicked="#clickServices" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Services_48px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

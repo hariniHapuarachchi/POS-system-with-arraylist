@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frmPlaceOrder" prefHeight="542.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fx.dep.controller.placeOrderController">
+   <children>
+      <Label layoutX="26.0" layoutY="56.0" text="Order ID" />
+      <Label layoutX="26.0" layoutY="100.0" text="Customer ID" />
+      <Label layoutX="26.0" layoutY="136.0" text="Item Code" />
+      <Label layoutX="26.0" layoutY="174.0" text="Available qty" />
+      <Label layoutX="341.0" layoutY="48.0" text="Date" />
+      <Label layoutX="344.0" layoutY="100.0" text="Customer Name" />
+      <Label layoutX="344.0" layoutY="136.0" text="Description" />
+      <Label layoutX="233.0" layoutY="174.0" text="Unit Price" />
+      <Label layoutX="431.0" layoutY="174.0" text="Qty" />
+      <TextField fx:id="oID" layoutX="119.0" layoutY="52.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="cID" layoutX="119.0" layoutY="96.0" onKeyPressed="#setOnKeyEnter" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="itemCode" layoutX="119.0" layoutY="132.0" onKeyPressed="#PressEnterForItem" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="currentDate" layoutX="441.0" layoutY="44.0" />
+      <TextField fx:id="cName" layoutX="441.0" layoutY="96.0" />
+      <TextField fx:id="placeDes" layoutX="441.0" layoutY="132.0" />
+      <TextField fx:id="placeQty" layoutX="460.0" layoutY="170.0" />
+      <TextField fx:id="price" layoutX="292.0" layoutY="170.0" prefHeight="25.0" prefWidth="126.0" />
+      <TextField fx:id="avQty" layoutX="109.0" layoutY="170.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button fx:id="pAdd" layoutX="208.0" layoutY="228.0" mnemonicParsing="false" onAction="#placeADD" prefHeight="25.0" prefWidth="51.0" text="Add" />
+      <Button fx:id="pRemove" layoutX="318.0" layoutY="228.0" mnemonicParsing="false" onAction="#placeRemove" text="Remove" />
+      <TableView fx:id="placeTable" layoutX="26.0" layoutY="263.0" prefHeight="200.0" prefWidth="589.0">
+        <columns>
+          <TableColumn prefWidth="88.0" text="Item Code" />
+          <TableColumn prefWidth="105.0" text="Description" />
+            <TableColumn prefWidth="119.0" text="Unit Price" />
+            <TableColumn prefWidth="139.0" text="Quantity" />
+            <TableColumn prefWidth="137.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="489.0" prefHeight="21.0" prefWidth="46.0" text="Total : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="subTotal" layoutX="81.0" layoutY="487.0" prefHeight="25.0" prefWidth="173.0" />
+      <Button layoutX="441.0" layoutY="487.0" mnemonicParsing="false" onAction="#placeHolder" prefHeight="25.0" prefWidth="106.0" text="Place Holder" />
+      <Button layoutX="521.0" layoutY="14.0" mnemonicParsing="false" onAction="#placeHome" text="Home" />
+   </children>
+</AnchorPane>
